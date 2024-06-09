@@ -1,0 +1,183 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    border-radius: 0%;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(18, 19, 19);
+    display: flex;
+    text-align: center;
+}
+
+ul {
+    color: aliceblue;
+    font-size: xx-large;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+ul:hover {
+    color: red;
+}
+
+div {
+    color: rgb(247, 249, 250);
+    padding-top: 20%;
+    padding-left: 1rem;
+
+
+}
+
+div:hover {
+    color: rgb(126, 7, 7);
+}
+
+p {
+    font-size: xx-large;
+    color: rgb(240, 47, 47);
+
+}
+
+h2 {
+    color: rgb(168, 19, 26);
+    padding-left: 3%;
+}
+
+
+
+h3 {
+    color: rgb(92, 4, 4);
+    padding-left:0.5%;
+    font-size: x-large;
+}
+
+
+p {
+    padding-left: 2rem;
+}
+
+img {
+
+    width: 500px;
+    padding-top: 9%;
+    border-radius: 5%;
+    border-bottom: 5%;
+    filter: sepia(1);
+    padding-left: 20rem;
+
+}
+
+img:hover {
+    filter: sepia(0);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: xx-large;
+    padding-left: 2rem;
+    font-style: normal;
+
+
+
+
+}a:hover{
+    color:#e4405f ;
+}
+
+button {
+    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
+    background-color: rgb(54, 223, 166);
+    border-radius: 30%;
+
+}.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #04456d;
+    color: #fff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #e4405f;
+    color: #fff;
+  }
+  
